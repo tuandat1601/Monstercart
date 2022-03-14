@@ -1,0 +1,28 @@
+.stream{
+	width: 100%;
+	margin-bottom: 3rem;
+
+	.list-layer{
+		border: 1px solid #fff;
+		display: inline-flex;
+		&__item{
+			padding: 1rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-right: 2px solid #fff;
+			a{
+				font-size: 18px;
+				text-align: center;
+				padding: 0.5rem;
+				position: relative;
+				i{
+					width: 1.25em;
+					color:#fff
+				}
+			}
+		}
+	}
+}
+
+

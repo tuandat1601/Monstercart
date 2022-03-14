@@ -1,0 +1,29 @@
+.background-page{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	
+
+	&__poster{
+		filter: blur(5px) brightness(38%);
+		width: 102%;
+		height: 102%;
+		background-image:linear-gradient( transparent , rgb(19, 17, 17) ), url(../images/logo/cover.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+	}
+}
+// .fade{
+// 	transform: translateY(-50%);
+// 	margin-top: -5px;
+// 	width: 102%;
+// 	height: 500px;
+// 	opacity: 0.6;
+// background: rgb(39,39,41);
+// background: linear-gradient(0deg, rgba(39,39,41,1) 0%, rgba(0,0,0,1) 52%, rgba(164,181,184,1) 100%);
+// }

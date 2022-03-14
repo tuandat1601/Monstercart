@@ -1,0 +1,145 @@
+.review{
+	margin-top: 7rem;
+	margin-bottom: 5rem;
+	padding-top: 5rem;
+	&-wrapp{
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		grid-column-gap:3rem ;
+		&__left{
+			position: relative;
+			top:0;
+			grid-column: 1 / 3;
+			padding-left: 1.5rem;
+			margin-bottom: 2rem;
+			.text-review{
+				display: block;
+				position: absolute;
+				transform: rotate(-180deg);
+				left: -5px;
+				bottom: 0;
+				font-family: 'Montserrat', 'Proxima Nova', sans-serif;
+				font-style: italic;
+				letter-spacing: 1px;
+  				  writing-mode: vertical-lr;
+				    span{
+					    color:#50A584;
+					    font-weight: 600;
+				    }
+			}
+			img{
+				display: block;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+		&__right{
+			position: relative;
+			top:0;
+			grid-column: 3 / 5;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			img{
+				width: 100%;
+				object-fit: cover;
+			}
+			h1{
+				-webkit-text-stroke-width:1px ;
+				-webkit-text-stroke-color:#f1f1f1 ;
+				-webkit-text-fill-color:transparent ;
+
+				font-size: 32px;
+				letter-spacing: 0.1em;
+				font-weight: 700;
+				text-transform: uppercase;
+				word-break: break-word;
+				margin-bottom: 1rem;
+			}
+			p{
+				font-family: "Monument Extended", "Helvetica", Arial, sans-serif;;
+				font-size: 32px;
+				font-weight: 700;
+				line-height: 1;
+				text-transform: uppercase;
+				margin-block-start: 1rem;
+    				margin-block-end: 1rem;
+				margin-bottom: 1.5rem;
+			}
+			.list-artist{
+				margin-bottom: 2rem;
+				a{
+					position: relative;
+					display: inline-block;
+					padding: 0.5rem;
+					margin-right: 1rem;
+					img{
+						height: 6rem;
+						width: 6rem;
+						border: none;
+						border-radius: 50%;
+					}
+
+
+				}
+
+			}
+			.btn-review{
+				display: flex;
+				.btn-play{
+					text-transform: uppercase;
+					background-color: #50A584;
+					color:#f1f1f1;
+					border:none;
+					outline: none;
+					font-size: 16px;
+					font-weight: 600;
+					padding: 1.2rem 2rem;
+					letter-spacing: 1px;
+					text-align: center;
+					align-items: center;
+					transition: 0.2s;
+					.fa-play{
+						margin-right: 1rem;
+						font-size: 14px;
+						-webkit-text-stroke-width:1px ;
+						-webkit-text-stroke-color:#f1f1f1 ;
+						-webkit-text-fill-color:transparent ;
+					}
+				}
+				.btn-share{
+					background-color: transparent;
+					color: #f1f1f1;
+					border: 1px solid #f1f1f1;
+					font-size: 16px;
+					transition: 0.2s;
+					font-weight: 500;
+					margin-left: 0.5rem;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					padding: 1.2rem 2rem;
+					.fa-share-alt{
+						-webkit-text-stroke-color: #f1f1f1;
+						-webkit-text-fill-color: transparent;
+						-webkit-text-stroke-width: 1px;
+
+
+					}
+				}
+				.btn:hover{
+					background-color: white;
+					color:black;
+					i{
+						-webkit-text-stroke-color: #000;
+					}
+				}
+				// .btn:hover i{
+
+				// 	-webkit-text-stroke-color: #000;
+
+				// }
+			}
+
+		}
+	}
+}

@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Montserrat', 'Proxima Nova', sans-serif;
+	-webkit-font-smoothing:antialiased;
+	font-feature-settings: "kern", "liga";
+	background-color: #000;
+	font-size: 100%;
+	color:#ffff;
+}
+::-webkit-scrollbar{
+	width: 7px;
+	height: 7px;
+}
+::-webkit-scrollbar-thumb{
+	background: #C4C4C4;
+	border: 0;
+	border-radius: 0px;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+section{
+	display: block;
+	margin-bottom: 3rem;
+}
+h1,h2,h3,h4,h5,h5,p{
+	margin: 0;
+	padding: 0;
+}
